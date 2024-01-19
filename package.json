@@ -1,0 +1,25 @@
+{
+    "name": "pe2-api-tests-ex4",
+    "version": "0.3.0",
+    "description": "End-2-end testing a REST API with Jest",
+    "scripts": {
+        "test": "jest ./test/assignees.test.js && jest ./test/todos.test.js"
+    },
+    "author": "Justus Bogner <justus.bogner@iste.uni-stuttgart.de>",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.20.12",
+        "@babel/preset-env": "^7.20.2",
+        "@faker-js/faker": "^7.6.0",
+        "axios": "^1.2.4",
+        "babel-jest": "^29.4.0",
+        "jest": "^29.4.0",
+        "papaparse": "^5.3.2"
+    },
+    "jest": {
+        "testEnvironmentOptions": {
+            "url": "http://localhost:8000"
+        },
+        "testTimeout": 30000
+    }
+}
